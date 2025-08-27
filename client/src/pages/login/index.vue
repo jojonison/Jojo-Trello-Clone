@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import { useAuthStore } from '@/store/auth';
 import { router } from '@/routes';
 import * as z from 'zod';
+import {useToast} from "@nuxt/ui/composables/useToast.js";
 
 const schema = z.object({
   email: z.email('invalid email'),
@@ -13,11 +14,12 @@ const auth = useAuthStore();
 const email = ref<string>('');
 const password = ref<string>('');
 const failedLogIn = ref<boolean>(false);
+const toast = useToast();
 
 function authenticate() {
   const result = schema.safeParse({email: email.value, password: password.value});
   if (!result.success) {
-    alert(result.error.message);
+    toast.add({title:'Error', description: 'User not Found'})
   } else {
     auth.login(email.value, password.value)
         .then(() => {

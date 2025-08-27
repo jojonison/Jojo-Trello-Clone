@@ -94,7 +94,7 @@ function handleProjectRenamed(updatedProject: Project) {
 
 <template>
   <main class="flex flex-col gap-6 border-[8px] border-yellow-800 bg-amber-100 p-6">
-    <div class="flex flex-wrap gap-4">
+    <div class="flex flex-wrap gap-4 ">
       <button
           @click="toggleAdd"
           class="border-3 border-yellow-700 rounded-md px-3 py-2 bg-yellow-100 hover:bg-yellow-500 text-pink-800 text-xl"
@@ -144,7 +144,7 @@ function handleProjectRenamed(updatedProject: Project) {
       <span v-if="projects.length > 0" class="text-pink-800 text-2xl">
         Current Project: {{ selectedProject?.project_name }}
       </span>
-      <span v-else class="text-lg">You have no projects</span>
+      <span v-else class="text-lg text-pink-800">You have no projects</span>
 
       <select
           v-model="selectedProject"

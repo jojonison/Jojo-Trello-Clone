@@ -3,6 +3,7 @@ import * as z from 'zod';
 import {inject, ref} from "vue";
 import {AxiosInstance, AxiosResponse} from "axios";
 import {Project} from "@/types/models/project";
+import {useToast} from "@nuxt/ui/composables/useToast.js";
 
 const ProjectInput = z.object({
   projectName: z.string().min(1)
@@ -20,23 +21,26 @@ const api = injectedApi;
 function cancelAdding() {
   emit("cancelAdd");
 }
+const toast = useToast();
 
 function addProject(projectName: string) {
   const result = ProjectInput.safeParse({projectName: projectName})
   if (!result.success) {
-    alert(result.error);
+    toast.add({title:'error', description: 'Project name cannot Empty', color:'info'})
   } else {
     api
         .post("/createProject", { project_name: projectName })
         .then((response: AxiosResponse) => {
           const newProject = response.data;
-          alert("Project created successfully");
+          toast.add({title: 'Success', description: 'Successfully created Project'})
           projName.value = "";
           emit("projectAdded", newProject);
           emit("cancelAdd");
         });
   }
 }
+
+
 
 </script>
 

@@ -10,6 +10,7 @@ import type { Task } from '@/types/models/task';
 import ProjectBoard from "@/components/ProjectBoard.vue";
 import { Project } from "@/types/models/project";
 import * as z from 'zod';
+import {useToast} from "@nuxt/ui/composables/useToast.js";
 
 const TaskInput = z.object({
   title: z.string().min(1),
@@ -28,6 +29,7 @@ if (!injectedApi) {
 }
 const api = injectedApi;
 const auth = useAuthStore();
+const toast = useToast();
 
 provide("finishedTasks", finishedTasks);
 
@@ -69,7 +71,7 @@ function loadFinishedTasks() {
 function addTask(task: Task) {
     const result = TaskInput.safeParse({title: task.title, description: task.description})
     if (!result.success) {
-      alert(result.error);
+      toast.add({title: 'Invalid', description: 'Title cannot be Empty', color:'error'});
     } else {
       api
           .post("/create-task", {
@@ -78,7 +80,7 @@ function addTask(task: Task) {
             project_id: selectedProject.value?.id
           })
           .then(function (response: AxiosResponse) {
-            alert("Task successfully added");
+            toast.add({title: 'Success', description: 'Task added successfully'})
             title.value = "";
             description.value = "";
             tasks.value.push(response.data[0]); // TODO watch if the tasks array logic is broken

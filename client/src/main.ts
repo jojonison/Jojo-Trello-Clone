@@ -4,6 +4,7 @@ import App from './App.vue'
 import { router } from './routes'
 import { pinia } from './store'
 import axios from "axios";
+import ui from '@nuxt/ui/vue-plugin'
 
 const api = axios.create({
     baseURL: "http://127.0.0.1:8000/api",
@@ -19,6 +20,7 @@ const api = axios.create({
 const init = async () => {
     const app = createApp(App);
     app.use(router);
+    app.use(ui);
     app.use(pinia);
     await api.get("/csrf-cookie").catch((e) => e);
     app.provide("api", api);

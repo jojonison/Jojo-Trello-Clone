@@ -4,6 +4,8 @@ import {Project} from "@/types/models/project";
 import {inject, ref} from "vue";
 import {AxiosInstance} from "axios";
 import * as z from 'zod';
+import {useToast} from "@nuxt/ui/composables/useToast.js";
+
 const injectedApi = inject<AxiosInstance>("api");
 if (!injectedApi) {throw new Error("API instance not provided");}
 const api = injectedApi;
@@ -19,11 +21,12 @@ const newName = ref<string>('');
 const ProjectInput = z.object({
   newName: z.string().min(1),
 })
+const toast = useToast();
 
 function rename(renamed: string) {
   const result = ProjectInput.safeParse({newName: renamed})
   if (!result.success) {
-    alert(result.error);
+    toast.add({title:'Invalid Input', description:"Project Name cannot be empty"})
   } else {
     if (currentProject.selectedProject) {
       api.put(`/updateProject/${currentProject.selectedProject.id}`, {
