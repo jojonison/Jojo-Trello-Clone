@@ -19,7 +19,11 @@ const toast = useToast();
 function authenticate() {
   const result = schema.safeParse({email: email.value, password: password.value});
   if (!result.success) {
-    toast.add({title:'Error', description: 'User not Found'})
+    toast.add({
+      title: z.flattenError(result.error).fieldErrors.email?.at(0),
+      description: 'please enter an email address',
+      color: 'warning',
+    })
   } else {
     auth.login(email.value, password.value)
         .then(() => {
@@ -28,7 +32,6 @@ function authenticate() {
         .catch(() => {failedLogIn.value = true;})
         .finally(() => {})
   }
-
 }
 </script>
 
@@ -36,8 +39,8 @@ function authenticate() {
     <div class="bg-amber-50">
         <main v-if="!auth.isLoggedIn" class="flex items-center justify-center h-screen bg-cover bg-center font-mono">
             <div v-if="failedLogIn">
-                <img src="@/assets/sad_ant.jpg" height="200" width="200" alt="User not found"/>
-                User not found
+                <img src="@/assets/sad_ant.jpg" alt="User not found" class="h-auto max-w-2xs"/>
+              <span class="text-black">User not found</span>
             </div>
             <div class="bg-yellow-100/90 border-[6px] border-yellow-800 rounded-xl shadow-lg p-6 w-80">
                 <h2 class="text-center text-yellow-900 text-2xl font-bold mb-4 drop-shadow-sm ">Journal</h2>

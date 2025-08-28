@@ -26,7 +26,11 @@ const toast = useToast();
 function rename(renamed: string) {
   const result = ProjectInput.safeParse({newName: renamed})
   if (!result.success) {
-    toast.add({title:'Invalid Input', description:"Project Name cannot be empty"})
+    toast.add({
+      title:'Invalid Input',
+      description: 'Project Name Cannot Be Empty',
+      color: 'warning'
+    })
   } else {
     if (currentProject.selectedProject) {
       api.put(`/updateProject/${currentProject.selectedProject.id}`, {
