@@ -33,7 +33,7 @@ function authenticate() {
 </script>
 
 <template>
-    <div>
+    <div class="bg-amber-50">
         <main v-if="!auth.isLoggedIn" class="flex items-center justify-center h-screen bg-cover bg-center font-mono">
             <div v-if="failedLogIn">
                 <img src="@/assets/sad_ant.jpg" height="200" width="200" alt="User not found"/>

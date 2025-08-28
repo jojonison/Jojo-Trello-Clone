@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add toast for zod">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AddProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AddProject.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/RenameProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/RenameProject.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/home/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ProjectBoard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ProjectBoard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/tasksdisplay/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/tasksdisplay/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/vite.config.ts" afterDir="false" />
     </list>
@@ -183,38 +174,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.laravel_idea.run_console_parameters_ask": "true",
-    "git-widget-placeholder": "master",
-    "laravel_idea.dialogs.code_generation:createBladeComponent.width": "414",
-    "laravel_idea.dialogs.code_generation:createBladeComponent.x": "561",
-    "laravel_idea.dialogs.code_generation:createBladeComponent.y": "298",
-    "laravel_idea.dialogs.run_console_command.width": "450",
-    "laravel_idea.dialogs.run_console_command.x": "543",
-    "laravel_idea.dialogs.run_console_command.y": "124",
-    "laravel_idea.dialogs.run_console_settings.width": "276",
-    "laravel_idea.dialogs.run_console_settings.x": "630",
-    "laravel_idea.dialogs.run_console_settings.y": "309",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "ts.external.directory.path": "C:\\Dev\\php\\client\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.laravel_idea.run_console_parameters_ask&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createBladeComponent.width&quot;: &quot;414&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createBladeComponent.x&quot;: &quot;561&quot;,
+    &quot;laravel_idea.dialogs.code_generation:createBladeComponent.y&quot;: &quot;298&quot;,
+    &quot;laravel_idea.dialogs.run_console_command.width&quot;: &quot;450&quot;,
+    &quot;laravel_idea.dialogs.run_console_command.x&quot;: &quot;543&quot;,
+    &quot;laravel_idea.dialogs.run_console_command.y&quot;: &quot;124&quot;,
+    &quot;laravel_idea.dialogs.run_console_settings.width&quot;: &quot;276&quot;,
+    &quot;laravel_idea.dialogs.run_console_settings.x&quot;: &quot;630&quot;,
+    &quot;laravel_idea.dialogs.run_console_settings.y&quot;: &quot;309&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Dev\\php\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Dev\php\client\src\types\models" />
@@ -270,8 +261,18 @@
       <workItem from="1755645979487" duration="15207000" />
       <workItem from="1755818957221" duration="13876000" />
       <workItem from="1756171378393" duration="236000" />
-      <workItem from="1756261789288" duration="4986000" />
+      <workItem from="1756261789288" duration="5328000" />
+      <workItem from="1756338754634" duration="1710000" />
     </task>
+    <task id="LOCAL-00001" summary="add toast for zod">
+      <option name="closed" value="true" />
+      <created>1756266970682</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756266970682</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +296,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add toast for zod" />
+    <option name="LAST_COMMIT_MESSAGE" value="add toast for zod" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

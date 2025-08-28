@@ -58,12 +58,10 @@ function cancelAdd() {
   isAdding.value = false;
 }
 
-// TODO
 function toggleRenameProject() {
   isRenaming.value = !isRenaming.value;
 }
 
-// TODO
 function cancelRename() {
   isRenaming.value = false;
 }
