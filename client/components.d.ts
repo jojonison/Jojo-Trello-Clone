@@ -18,5 +18,9 @@ declare module 'vue' {
     TasksDisplayUnfinishedTask: typeof import('./src/components/TasksDisplayUnfinishedTask.vue')['default']
     TaskStatusDropdown: typeof import('./src/components/TaskStatusDropdown.vue')['default']
     UApp: typeof import('./node_modules/@nuxt/ui/dist/runtime/components/App.vue')['default']
+    UButton: typeof import('./node_modules/@nuxt/ui/dist/runtime/components/Button.vue')['default']
+    UForm: typeof import('./node_modules/@nuxt/ui/dist/runtime/components/Form.vue')['default']
+    UFormField: typeof import('./node_modules/@nuxt/ui/dist/runtime/components/FormField.vue')['default']
+    UInput: typeof import('./node_modules/@nuxt/ui/dist/runtime/components/Input.vue')['default']
   }
 }

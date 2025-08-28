@@ -22,7 +22,7 @@ class CreateTaskRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "title" => "required|string|unique:tasks",
+            "title" => "required|string",
             "description" => "nullable|string",
             "project_id" => "required|string",
         ];
