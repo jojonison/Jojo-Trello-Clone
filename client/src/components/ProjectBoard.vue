@@ -110,7 +110,7 @@ function handleProjectRenamed(updatedProject: Project) {
           @click="archiveProject"
           class="border-3 border-yellow-700 rounded-md px-3 py-2 bg-yellow-100 hover:bg-yellow-500 text-pink-800 text-xl"
       >
-        🗄️ Archive Selected Project
+        🗄️ Archive Current Project
       </button>
 
       <button

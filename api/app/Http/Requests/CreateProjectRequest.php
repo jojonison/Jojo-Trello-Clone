@@ -22,7 +22,7 @@ class CreateProjectRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'project_name' => 'required|string|unique:projects',
+            'project_name' => 'required|string',
 
         ];
     }

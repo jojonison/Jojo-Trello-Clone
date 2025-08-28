@@ -69,6 +69,6 @@ function authenticate() {
                 </form>
             </div>
         </main>
-        <div v-else>You are already logged in</div>
+        <div v-else class="bg-amber-50 text-amber-950">You are already logged in</div>
     </div>
 </template>

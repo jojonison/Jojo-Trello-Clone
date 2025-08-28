@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="fix nuxt installation">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="drop unique constraint in tasks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Requests/CreateTaskRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Requests/CreateTaskRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/components.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Requests/CreateProjectRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Requests/CreateProjectRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/ProjectBoard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ProjectBoard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/login/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +261,7 @@
       <workItem from="1755818957221" duration="13876000" />
       <workItem from="1756171378393" duration="236000" />
       <workItem from="1756261789288" duration="5328000" />
-      <workItem from="1756338754634" duration="2953000" />
+      <workItem from="1756338754634" duration="4337000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -278,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756340503788</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="drop unique constraint in tasks">
+      <option name="closed" value="true" />
+      <created>1756341875090</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756341875090</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +315,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add toast for zod" />
     <MESSAGE value="fix nuxt installation" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix nuxt installation" />
+    <MESSAGE value="drop unique constraint in tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="drop unique constraint in tasks" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
