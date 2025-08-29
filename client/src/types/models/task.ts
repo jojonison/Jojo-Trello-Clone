@@ -5,4 +5,5 @@ export type Task = {
     status?: string;
     created_at?: string | Date;
     completed_at?: string | Date;
+    sticker?: string | null;
 }

@@ -14,6 +14,8 @@ use App\Http\Requests\CompleteTaskRequest;
 use App\Http\Resources\TaskResource;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Storage;
+use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
+use Spatie\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
 
 class TaskController extends Controller
 {
@@ -52,6 +54,11 @@ class TaskController extends Controller
             "title" => $request->input("title"),
             "description" => $request->input("description")
         ]);
+        if ($request->hasFile('sticker')) {
+            try {
+                $task->addMediaFromRequest('sticker')->toMediaCollection('sticker');
+            } catch (FileDoesNotExist|FileIsTooBig) {}
+        }
         return response()->json(TaskResource::make($task));
     }
 

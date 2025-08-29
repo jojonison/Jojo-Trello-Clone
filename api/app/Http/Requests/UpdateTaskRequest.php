@@ -3,8 +3,6 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
-use App\Models\Task;
 
 class UpdateTaskRequest extends FormRequest
 {
@@ -23,12 +21,10 @@ class UpdateTaskRequest extends FormRequest
      */
     public function rules(): array
     {
-        $decodedId = Task::hashToId($this->route('id'));
         return [
             "title" => [
                 "required",
                 "string",
-                Rule::unique("tasks", "title")->ignore($decodedId),
             ],
             "description" => "nullable|string",
         ];

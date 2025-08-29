@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="zod and toast">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Requests/CreateTaskRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Requests/CreateTaskRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/tasksdisplay/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/tasksdisplay/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Requests/UpdateTaskRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Requests/UpdateTaskRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Resources/TaskResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Resources/TaskResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/Task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/types/models/task.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/types/models/task.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +168,12 @@
       <path value="$PROJECT_DIR$/api/vendor/voku/portable-ascii" />
       <path value="$PROJECT_DIR$/api/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/api/vendor/_laravel_idea" />
+      <path value="$PROJECT_DIR$/api/vendor/spatie/image" />
+      <path value="$PROJECT_DIR$/api/vendor/spatie/laravel-medialibrary" />
+      <path value="$PROJECT_DIR$/api/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/api/vendor/spatie/temporary-directory" />
+      <path value="$PROJECT_DIR$/api/vendor/spatie/laravel-package-tools" />
+      <path value="$PROJECT_DIR$/api/vendor/maennchen/zipstream-php" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -263,7 +274,7 @@
       <workItem from="1756261789288" duration="5328000" />
       <workItem from="1756338754634" duration="13746000" />
       <workItem from="1756384603833" duration="2566000" />
-      <workItem from="1756425708204" duration="3147000" />
+      <workItem from="1756425708204" duration="9990000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -305,7 +316,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756352120305</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status">
+      <option name="closed" value="true" />
+      <created>1756429079824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756429079824</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +355,8 @@
     <MESSAGE value="drop unique constraint in tasks" />
     <MESSAGE value="project_name no longer unique" />
     <MESSAGE value="zod and toast" />
-    <option name="LAST_COMMIT_MESSAGE" value="zod and toast" />
+    <MESSAGE value="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
