@@ -25,6 +25,7 @@ class CreateTaskRequest extends FormRequest
             "title" => "required|string",
             "description" => "nullable|string",
             "project_id" => "required|string",
+            "status" => "string",
         ];
     }
 }

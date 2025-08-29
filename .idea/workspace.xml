@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="project_name no longer unique">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="zod and toast">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/RenameProject.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/RenameProject.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/TaskController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Requests/CreateTaskRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Requests/CreateTaskRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/tasksdisplay/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/tasksdisplay/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,9 +165,9 @@
       <path value="$PROJECT_DIR$/api/vendor/_laravel_idea" />
     </include_path>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="31ENzjLBUgGw1YXqOeFHIpWbzkO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -194,7 +195,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Dev\\php\\client\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
@@ -260,7 +261,9 @@
       <workItem from="1755818957221" duration="13876000" />
       <workItem from="1756171378393" duration="236000" />
       <workItem from="1756261789288" duration="5328000" />
-      <workItem from="1756338754634" duration="12861000" />
+      <workItem from="1756338754634" duration="13746000" />
+      <workItem from="1756384603833" duration="2566000" />
+      <workItem from="1756425708204" duration="3147000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -294,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756343178008</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="zod and toast">
+      <option name="closed" value="true" />
+      <created>1756352120305</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756352120305</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +335,8 @@
     <MESSAGE value="fix nuxt installation" />
     <MESSAGE value="drop unique constraint in tasks" />
     <MESSAGE value="project_name no longer unique" />
-    <option name="LAST_COMMIT_MESSAGE" value="project_name no longer unique" />
+    <MESSAGE value="zod and toast" />
+    <option name="LAST_COMMIT_MESSAGE" value="zod and toast" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

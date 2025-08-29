@@ -41,35 +41,32 @@ class TaskController extends Controller
             "description" => $request->input("description"),
             "project_id" => Project::hashToId($projectID),
             "user_id" => $user->id,
+            "status" => "not started"
         ]);
-        $query = Task::where("title", $task->title)->get();
-        return response()->json(TaskResource::collection($query)); //::make?
+        return response()->json(TaskResource::make($task));
     }
 
     public function updateTask(UpdateTaskRequest $request, $id) {
-        $task = Task::find(Task::hashToId($id));
+        $task = Task::findOrFail(Task::hashToId($id));
         $task->update([
             "title" => $request->input("title"),
             "description" => $request->input("description")
         ]);
-        $query = Task::where("id", $task->$id)->get();
-        return response()->json(TaskResource::collection($query));
+        return response()->json(TaskResource::make($task));
     }
 
     public function updateStatus(Request $request, $id) {
-        $task = Task::find(Task::hashToId($id));
+        $task = Task::findOrFail(Task::hashToId($id));
         $task->update([
             "status" => $request->input("status")
         ]);
-        $query = Task::where("id", $task->id)->get();
-        return response()->json(TaskResource::collection($query));
+        return response()->json(TaskResource::make($task));
     }
 
     public function completeTask(CompleteTaskRequest $request, $id) {
         $task = Task::byHashOrFail($id);
         $task->update(["completed_at" => Carbon::now('Asia/Manila')->toDateTimeString()]);
-        $query = Task::where("id", $task->id)->get();
-        return response()->json(TaskResource::collection($query));
+        return response()->json(TaskResource::make($task));
     }
 
     public function removeTask(Request $request, $id) {

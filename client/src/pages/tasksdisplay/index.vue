@@ -83,7 +83,7 @@ function addTask(task: Task) {
             toast.add({title: 'Success', description: 'Task added successfully'})
             title.value = "";
             description.value = "";
-            tasks.value.push(response.data[0]); // TODO watch if the tasks array logic is broken
+            tasks.value.push(response.data);
             // loadTasks();
           })
     }
@@ -93,7 +93,7 @@ function addTask(task: Task) {
 function removeTaskFromList(id: number, isComplete: boolean, response: AxiosResponse) {
     const index = tasks.value.findIndex(task => task.id === id);
     if (isComplete) {
-        finishedTasks.value.push(response.data[0])
+        finishedTasks.value.push(response.data)
     }
     if (index !== -1) {
         tasks.value.splice(index, 1);
