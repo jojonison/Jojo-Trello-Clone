@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="Start add sticker on edit/update task. Install spatie media library">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/TaskController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/TaskController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Requests/UpdateTaskRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Requests/UpdateTaskRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/app/Http/Resources/TaskResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Resources/TaskResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/app/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/Task.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/api/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/types/models/task.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/types/models/task.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +268,7 @@
       <workItem from="1756261789288" duration="5328000" />
       <workItem from="1756338754634" duration="13746000" />
       <workItem from="1756384603833" duration="2566000" />
-      <workItem from="1756425708204" duration="9990000" />
+      <workItem from="1756425708204" duration="12685000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -324,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756429079824</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Start add sticker on edit/update task. Install spatie media library">
+      <option name="closed" value="true" />
+      <created>1756437666501</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756437666501</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +358,8 @@
     <MESSAGE value="project_name no longer unique" />
     <MESSAGE value="zod and toast" />
     <MESSAGE value="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status" />
+    <MESSAGE value="Start add sticker on edit/update task. Install spatie media library" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start add sticker on edit/update task. Install spatie media library" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

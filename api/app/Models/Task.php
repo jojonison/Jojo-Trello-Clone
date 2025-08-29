@@ -38,6 +38,6 @@ class Task extends Model implements HasMedia
     public function registerMediaCollections(): void
     {
         $this->addMediaCollection('sticker')
-            ->singleFile(); // ensures only one sticker per task
+            ->singleFile();
     }
 }

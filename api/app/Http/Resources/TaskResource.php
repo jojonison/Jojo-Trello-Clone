@@ -24,7 +24,7 @@ class TaskResource extends JsonResource
             "user" => UserResource::make($this->user),
             "slug" => Str::slug($this->title),
             "project_id" => $this->hash,
-            "sticker" => $this->getFirstMediaUrl("sticker"),
+            'sticker' => $this->getFirstMediaUrl('sticker') ?: '',
         ];
     }
 }
