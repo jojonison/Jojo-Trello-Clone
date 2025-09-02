@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="Start add sticker on edit/update task. Install spatie media library">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add more spatie, to be continued">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Resources/TaskResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Resources/TaskResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Models/Task.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Models/Task.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,8 +198,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Dev\\php\\client\\node_modules\\typescript\\lib",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "ts.external.directory.path": "C:\\Dev\\php\\client2\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -268,7 +266,9 @@
       <workItem from="1756261789288" duration="5328000" />
       <workItem from="1756338754634" duration="13746000" />
       <workItem from="1756384603833" duration="2566000" />
-      <workItem from="1756425708204" duration="12685000" />
+      <workItem from="1756425708204" duration="12777000" />
+      <workItem from="1756768843659" duration="1410000" />
+      <workItem from="1756771755757" duration="7367000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -326,7 +326,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756437666501</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add more spatie, to be continued">
+      <option name="closed" value="true" />
+      <created>1756440272113</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756440272113</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +367,8 @@
     <MESSAGE value="zod and toast" />
     <MESSAGE value="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status" />
     <MESSAGE value="Start add sticker on edit/update task. Install spatie media library" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start add sticker on edit/update task. Install spatie media library" />
+    <MESSAGE value="add more spatie, to be continued" />
+    <option name="LAST_COMMIT_MESSAGE" value="add more spatie, to be continued" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
