@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add more spatie, to be continued">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add nuxt client">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/config/sanctum.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/config/sanctum.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/pages/home/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client2/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client2/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client2/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +218,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Dev\php\client2\app\plugins" />
+      <recent name="C:\Dev\php\client2\app\pages\home" />
       <recent name="C:\Dev\php\client\src\types\models" />
       <recent name="C:\Dev\php\client\src\routes" />
     </key>
@@ -268,7 +278,7 @@
       <workItem from="1756384603833" duration="2566000" />
       <workItem from="1756425708204" duration="12777000" />
       <workItem from="1756768843659" duration="1410000" />
-      <workItem from="1756771755757" duration="7367000" />
+      <workItem from="1756771755757" duration="14714000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -334,19 +344,19 @@
       <option name="project" value="LOCAL" />
       <updated>1756440272113</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add nuxt client">
+      <option name="closed" value="true" />
+      <created>1756779400345</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1756779400345</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/client/src/routes/index.js" />
-        <option value="$PROJECT_DIR$/client/src/routes/routes.js" />
-        <option value="$PROJECT_DIR$/client/src/store/index.js" />
-        <option value="$PROJECT_DIR$/client/src/store/auth.js" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -368,7 +378,8 @@
     <MESSAGE value="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status" />
     <MESSAGE value="Start add sticker on edit/update task. Install spatie media library" />
     <MESSAGE value="add more spatie, to be continued" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more spatie, to be continued" />
+    <MESSAGE value="add nuxt client" />
+    <option name="LAST_COMMIT_MESSAGE" value="add nuxt client" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

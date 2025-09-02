@@ -4,6 +4,6 @@
 
 <template>
   <main>
-    Hello
+    This is the home page
   </main>
 </template>
