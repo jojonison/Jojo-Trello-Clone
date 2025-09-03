@@ -1,15 +1,15 @@
 import { defineStore } from "pinia";
 
 export const useAuthStore = defineStore('auth',  () => {
-    const {$api} = useNuxtApp();
+    const api = useNuxtApp().$api;
     const email = ref<string | null>(null);
     const name = ref<string | null>(null);
     const isLoggedIn = computed(() => {
         return !!email.value;
     })
 
-    function login(emailInput: string, passwordInput: string) {
-        return $api.post<{ email: string; name: string }>('logIn', {
+    async function login(emailInput: string, passwordInput: string) {
+        return api.post<{ email: string; name: string }>('logIn', {
             email: emailInput,
             password: passwordInput
         })
@@ -19,8 +19,8 @@ export const useAuthStore = defineStore('auth',  () => {
             })
     }
 
-    function logout() {
-        return $api
+    async function logout() {
+        return api
             .post('logOut')
             .finally(() => {
                 email.value = null;
@@ -29,5 +29,5 @@ export const useAuthStore = defineStore('auth',  () => {
     }
     return {email, name, isLoggedIn, login, logout};
 }, {
-    persist: true, // 👈 this enables persistence
+    persist: {storage: piniaPluginPersistedstate.cookies()},
 });

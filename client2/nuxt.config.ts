@@ -7,8 +7,15 @@ export default defineNuxtConfig({
         '@nuxt/image',
         '@nuxt/ui',
         '@pinia/nuxt',
-        'pinia-plugin-persistedstate/nuxt'
+        'pinia-plugin-persistedstate/nuxt',
     ],
+    piniaPluginPersistedstate: {
+        storage: 'cookies',
+        cookieOptions: {
+            sameSite: 'lax',
+        },
+        debug: true,
+    },
     runtimeConfig: {
         public: {
             apiBase: 'http://127.0.0.1:8000/api',
