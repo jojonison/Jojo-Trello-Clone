@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div v-for="project in projects.values()" :key="project.id"/>
+    <div v-for="project in projects" :key="project.id">
+      {{project.project_name}}
+    </div>
   </div>
 </template>
 

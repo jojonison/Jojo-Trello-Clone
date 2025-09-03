@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add log in, pinia, axios, configs in nuxt client">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="fix axios, add project, update env file to have statefuldomain">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/pages/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/pages/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/components/ProjectsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ProjectsView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client2/app/pages/todo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/pages/todo/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/plugins/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/plugins/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/store/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/store/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client2/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client2/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client2/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +274,7 @@
       <workItem from="1756425708204" duration="12777000" />
       <workItem from="1756768843659" duration="1410000" />
       <workItem from="1756771755757" duration="14857000" />
-      <workItem from="1756857428288" duration="10639000" />
+      <workItem from="1756857428288" duration="15597000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -361,7 +356,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756786670380</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix axios, add project, update env file to have statefuldomain">
+      <option name="closed" value="true" />
+      <created>1756868408264</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1756868408264</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +392,8 @@
     <MESSAGE value="add more spatie, to be continued" />
     <MESSAGE value="add nuxt client" />
     <MESSAGE value="add log in, pinia, axios, configs in nuxt client" />
-    <option name="LAST_COMMIT_MESSAGE" value="add log in, pinia, axios, configs in nuxt client" />
+    <MESSAGE value="fix axios, add project, update env file to have statefuldomain" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix axios, add project, update env file to have statefuldomain" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
