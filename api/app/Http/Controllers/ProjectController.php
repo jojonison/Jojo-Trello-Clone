@@ -45,7 +45,7 @@ class ProjectController extends Controller
     }
 
     public function showProject(Request $request, $id) {
-        $project = Project::where('owned_by', $request->user()->where('id', $id)->firstOrFail());
+        $project = Project::byHashOrFail($id);
         return response()->json(ProjectResource::make($project));
     }
 

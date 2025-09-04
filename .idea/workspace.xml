@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="fix axios, add project, update env file to have statefuldomain">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add cmd palette">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/app.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client2/app/components/ProjectsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ProjectsView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/pages/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/pages/login/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client2/app/pages/todo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/pages/todo/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client2/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +25,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="Vue Composition API Component" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -274,7 +276,8 @@
       <workItem from="1756425708204" duration="12777000" />
       <workItem from="1756768843659" duration="1410000" />
       <workItem from="1756771755757" duration="14857000" />
-      <workItem from="1756857428288" duration="15597000" />
+      <workItem from="1756857428288" duration="15640000" />
+      <workItem from="1756943767933" duration="7856000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -364,7 +367,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756868408264</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add cmd palette">
+      <option name="closed" value="true" />
+      <created>1756873157792</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1756873157792</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +404,8 @@
     <MESSAGE value="add nuxt client" />
     <MESSAGE value="add log in, pinia, axios, configs in nuxt client" />
     <MESSAGE value="fix axios, add project, update env file to have statefuldomain" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix axios, add project, update env file to have statefuldomain" />
+    <MESSAGE value="add cmd palette" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cmd palette" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

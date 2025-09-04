@@ -44,18 +44,18 @@ function authenticate() {
     <UForm
         :schema="schema"
         :state="state"
-        class="bg-yellow-100/90 border-[6px] border-yellow-800 rounded-xl shadow-lg p-6 w-80"
+        class="bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg m-2 p-6 w-80"
         @submit.prevent="authenticate"
     >
       <UFormField label="Email" name="Email">
-        <UInput v-model="email" class="w-full border-4 border-yellow-700 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-yellow-400 bg-yellow-50 text-yellow-900 placeholder-yellow-700"/>
+        <UInput v-model="email" class="w-full border-4 bg-blue-200 border-b-blue-950 rounded-xl shadow-lg m-2"/>
       </UFormField>
       <UFormField label="Password" name="Password">
-        <UInput v-model="password" type="password" class="w-full border-4 border-yellow-700 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-yellow-400 bg-yellow-50 text-yellow-900 placeholder-yellow-700"/>
+        <UInput v-model="password" type="password" class="w-full border-4 bg-blue-200 border-b-blue-950 rounded-xl shadow-lg m-2"/>
       </UFormField>
       <UButton
           type="submit"
-          class="w-full mt-6 py-2 px-4 rounded-full border-2 border-yellow-800 bg-yellow-200 hover:bg-yellow-300 text-yellow-900 hover:text-white font-semibold transition-all duration-300"
+          class="w-full bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg m-2 hover:bg-blue-200"
           @click="authenticate">Log In
       </UButton>
     </UForm>
