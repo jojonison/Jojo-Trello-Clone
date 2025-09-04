@@ -48,14 +48,14 @@ function authenticate() {
         @submit.prevent="authenticate"
     >
       <UFormField label="Email" name="Email">
-        <UInput v-model="email" class="w-full border-4 bg-blue-200 border-b-blue-950 rounded-xl shadow-lg m-2"/>
+        <UInput v-model="email" placeholder="example@example.com" color="neutral" class="w-full border-4 bg-blue-200 border-b-blue-950 rounded-xl shadow-lg m-2"/>
       </UFormField>
       <UFormField label="Password" name="Password">
-        <UInput v-model="password" type="password" class="w-full border-4 bg-blue-200 border-b-blue-950 rounded-xl shadow-lg m-2"/>
+        <UInput v-model="password" placeholder="Enter your password" color="neutral" type="password" class="w-full border-4 bg-blue-200 border-b-blue-950 rounded-xl shadow-lg m-2"/>
       </UFormField>
       <UButton
           type="submit"
-          class="w-full bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg m-2 hover:bg-blue-200"
+          class="w-full bg-cyan-700 border-[6px] border-b-blue-950 rounded-xl shadow-lg m-2 hover:bg-blue-200"
           @click="authenticate">Log In
       </UButton>
     </UForm>

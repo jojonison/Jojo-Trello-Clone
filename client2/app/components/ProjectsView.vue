@@ -5,6 +5,7 @@
         class="bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
       {{ project.project_name }}
       <UButton
+color="neutral"
           class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
           @click="selectProject(project.id)">Select Project
       </UButton>

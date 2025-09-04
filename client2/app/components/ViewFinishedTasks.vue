@@ -24,9 +24,9 @@ function loadFinishedTasks() {
     <div v-if="props.selectedProject === undefined">
       Please select a project first
     </div>
-    <div v-for="task in finishedTasks" :key="task.id" class="bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
-      {{ task.title }}
-      {{ task.description }}
+    <div v-for="task in finishedTasks" :key="task.id" class="flex flex-col bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
+      <div><b>Title:</b> {{ task.title }}</div>
+      <div><b>Description:</b> {{ task.description }}</div>
     </div>
   </main>
 </template>
