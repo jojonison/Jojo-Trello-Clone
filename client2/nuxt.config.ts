@@ -24,13 +24,9 @@ export default defineNuxtConfig({
     components: [{ path: '~/components' }],
     ssr: false,
     css: ['~/assets/css/tailwind.css'],
-    postcss: {
-        plugins: {
-            '@tailwindcss/postcss': {},
-        },
-    },
+
     devServer: {
         host: '127.0.0.1',
         port: 3000,
-    },
+    }
 })

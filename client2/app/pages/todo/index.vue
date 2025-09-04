@@ -40,7 +40,7 @@ onBeforeUnmount(() => {window.removeEventListener("keydown", handleKeydown);});
   <main>
     <div
         v-if="selectedProject"
-        class=" flex justify-center bg-blue-200 border-[6px] border-blue-950 rounded-xl shadow-lg m-2">
+        class="flex justify-center rounded-xl shadow-lg m-2 text-blue-400 font-extrabold text-4xl">
       Selected project: {{ selectedProject.project_name }}
     </div>
     <div class="flex flex-row justify-center">
@@ -55,13 +55,13 @@ onBeforeUnmount(() => {window.removeEventListener("keydown", handleKeydown);});
         />
       </div>
       <div>
-        <UModal v-model:open="open" class="flex flex-row justify-center">
+        <UModal v-model:open="open" class="flex flex-row justify-center max-w-fit">
           <template #content>
             <UCommandPalette
                 v-model="selectedOption"
                 :groups="options"
                 close
-                class="bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg"
+                class="bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg w-dvw"
                 @update:open="open = $event"
             />
           </template>
@@ -75,6 +75,5 @@ onBeforeUnmount(() => {window.removeEventListener("keydown", handleKeydown);});
           @project-selected="selectedProject = $event"
       />
     </div>
-
   </main>
 </template>

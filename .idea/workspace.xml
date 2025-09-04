@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add cmd palette">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add import project type in ViewFinishedTasks.vue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/assets/css/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/assets/css/tailwind.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client2/app/components/ProjectsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ProjectsView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/pages/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/pages/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/components/ViewArchivedProjects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ViewArchivedProjects.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/components/ViewFinishedTasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ViewFinishedTasks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/components/ViewUnfinishedTasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ViewUnfinishedTasks.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client2/app/pages/todo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/pages/todo/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client2/nuxt.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +279,7 @@
       <workItem from="1756768843659" duration="1410000" />
       <workItem from="1756771755757" duration="14857000" />
       <workItem from="1756857428288" duration="15640000" />
-      <workItem from="1756943767933" duration="7856000" />
+      <workItem from="1756943767933" duration="12824000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -375,7 +377,23 @@
       <option name="project" value="LOCAL" />
       <updated>1756873157792</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add components">
+      <option name="closed" value="true" />
+      <created>1756951697033</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1756951697033</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add import project type in ViewFinishedTasks.vue">
+      <option name="closed" value="true" />
+      <created>1756951767174</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1756951767174</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +423,9 @@
     <MESSAGE value="add log in, pinia, axios, configs in nuxt client" />
     <MESSAGE value="fix axios, add project, update env file to have statefuldomain" />
     <MESSAGE value="add cmd palette" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cmd palette" />
+    <MESSAGE value="add components" />
+    <MESSAGE value="add import project type in ViewFinishedTasks.vue" />
+    <option name="LAST_COMMIT_MESSAGE" value="add import project type in ViewFinishedTasks.vue" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

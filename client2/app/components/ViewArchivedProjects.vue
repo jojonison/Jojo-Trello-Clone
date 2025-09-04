@@ -16,7 +16,7 @@ function loadArchivedProjects() {
 
 <template>
   <main class="bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg">
-    <div v-for="project in archivedProjects" :key="project.id">
+    <div v-for="project in archivedProjects" :key="project.id" class="bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
       {{ project.project_name }}
     </div>
   </main>

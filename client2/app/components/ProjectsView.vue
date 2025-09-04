@@ -2,10 +2,10 @@
   <div class="bg-blue-400 border-[6px] border-blue-950 rounded-xl shadow-lg m-2">
     <div
         v-for="project in projects" :key="project.id"
-        class="bg-blue-200 border-[2px] border-blue-950 p-2">
+        class="bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
       {{ project.project_name }}
       <UButton
-          class="border-[2px] border-blue-950 hover:bg-blue-400"
+          class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
           @click="selectProject(project.id)">Select Project
       </UButton>
     </div>
