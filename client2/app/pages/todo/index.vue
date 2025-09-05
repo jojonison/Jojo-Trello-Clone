@@ -24,7 +24,7 @@ const options = [
   },
 ];
 const selectedComponent = computed(() => selectedOption.value?.component ?? null);
-const selectedProject = ref<Project>();
+const selectedProject = ref<Project | undefined>();
 
 function handleKeydown(e: KeyboardEvent) {
   if (e.shiftKey && e.key.toLowerCase() === "p") {

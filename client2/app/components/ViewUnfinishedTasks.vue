@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type {AxiosResponse} from "axios";
 import type {Task} from '~/utils/types/models/task';
+import type {Project} from "~/utils/types/models/project";
 const {$api} = useNuxtApp();
 const unfinishedTasks = ref<Task[]>();
 const props = defineProps<{
