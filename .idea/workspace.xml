@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="adjust colors, add details in ViewFinishedTasks.vue">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add archive and unarchive project buttons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/components/ProjectsView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ProjectsView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/components/ViewArchivedProjects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ViewArchivedProjects.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client2/app/components/ViewUnfinishedTasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ViewUnfinishedTasks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/pages/todo/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/pages/todo/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +274,7 @@
       <workItem from="1756771755757" duration="14857000" />
       <workItem from="1756857428288" duration="15640000" />
       <workItem from="1756943767933" duration="14206000" />
-      <workItem from="1757030043740" duration="2099000" />
+      <workItem from="1757030043740" duration="4021000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -407,7 +404,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756957293054</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="add archive and unarchive project buttons">
+      <option name="closed" value="true" />
+      <created>1757032297046</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1757032297046</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +446,8 @@
     <MESSAGE value="add import project type in ViewFinishedTasks.vue" />
     <MESSAGE value="fix tailwind installation, adjust css, add more details for displaying tasks" />
     <MESSAGE value="adjust colors, add details in ViewFinishedTasks.vue" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust colors, add details in ViewFinishedTasks.vue" />
+    <MESSAGE value="add archive and unarchive project buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="add archive and unarchive project buttons" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

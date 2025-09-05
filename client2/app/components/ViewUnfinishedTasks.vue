@@ -17,6 +17,30 @@ function loadUnfinishedTasks() {
         unfinishedTasks.value = response.data;
       })
 }
+
+const statusOptions = ref([
+  {label: 'Not Started', value: 'not started'},
+  {label: 'In Progress', value: 'in progress'},
+  {label: 'On Hold', value: 'on hold'}
+]);
+
+function updateTaskStatus(task: Task) {
+  $api.put(`/update-status/${task.id}`, {status: task.status}, {withCredentials: true})
+}
+
+function markTaskAsDone(task: Task) {
+  $api.patch(`/task-complete/${task.id}`)
+      .then(() => {
+        unfinishedTasks.value = unfinishedTasks.value?.filter(unfinishedTask => unfinishedTask.id !== task.id)
+      })
+}
+
+function removeTask(task: Task) {
+  $api.delete(`/removeTask/${task.id}`)
+      .then(() => {
+        unfinishedTasks.value = unfinishedTasks.value?.filter(unfinishedTask => unfinishedTask.id !== task.id)
+      })
+}
 </script>
 
 <template>
@@ -25,10 +49,29 @@ function loadUnfinishedTasks() {
       Please select a project first
     </div>
     <div v-for="task in unfinishedTasks" :key="task.id" class="flex flex-col bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
-      <div><b>Title:</b> {{ task.title }}</div>
-      <div><b>Description:</b> {{ task.description }}</div>
-      <div><b>Status:</b> {{ task.status }}</div>
+      <div><span class="font-bold">Title:</span> {{ task.title }}</div>
+      <div><span class="font-bold">Description:</span> {{ task.description }}</div>
+      <div><span class="font-bold">Status:</span> {{ task.status }}</div>
+      <USelect
+        v-model="task.status"
+        color="neutral"
+        :items="statusOptions"
+        @update:model-value="() => updateTaskStatus(task)"
+      />
+      <UButton
+          color="neutral"
+          class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
+          @click="markTaskAsDone(task)"
+      >
+        Mark as Done
+      </UButton>
+      <UButton
+          color="neutral"
+          class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
+          @click="removeTask(task)"
+      >
+        Remove Task
+      </UButton>
     </div>
-
   </main>
 </template>
