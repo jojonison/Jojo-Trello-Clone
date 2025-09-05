@@ -10,7 +10,7 @@ const router = useRouter();
 
 const schema = z.object({
   email: z.email('invalid email'),
-  password: z.string()
+  password: z.string().min(1)
 })
 
 type Schema = z.output<typeof schema>
@@ -55,8 +55,11 @@ function authenticate() {
       </UFormField>
       <UButton
           type="submit"
-          class="w-full bg-cyan-700 border-[6px] border-b-blue-950 rounded-xl shadow-lg m-2 hover:bg-blue-200"
-          @click="authenticate">Log In
+          color="neutral"
+          class="w-full bg-blue-200 border-[6px] border-b-blue-950 rounded-xl shadow-lg m-2 hover:bg-blue-800 "
+          @click="authenticate"
+      >
+        ➡️ Log In
       </UButton>
     </UForm>
   </main>
