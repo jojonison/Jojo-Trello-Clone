@@ -25,8 +25,9 @@ function loadFinishedTasks() {
       Please select a project first
     </div>
     <div v-for="task in finishedTasks" :key="task.id" class="flex flex-col bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
-      <div><b>Title:</b> {{ task.title }}</div>
-      <div><b>Description:</b> {{ task.description }}</div>
+      <div><span class="font-bold">Title:</span> {{ task.title }}</div>
+      <div><span class="font-bold">Description:</span> {{ task.description }}</div>
+      <div><span class="font-bold">Completed At:</span> {{task.completed_at }}</div>
     </div>
   </main>
 </template>
