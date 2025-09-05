@@ -33,11 +33,17 @@ const emit = defineEmits<{
   (e: 'projectSelected', project: Project | undefined): void
 }>()
 const selectedProject = ref<Project | undefined>(undefined);
+const toast = useToast()
 function selectProject(id: UnwrapRef<Project["id"]> | undefined) {
   $api.get(`/showProject/${id}`, {withCredentials: true})
       .then((response: AxiosResponse) => {
         emit('projectSelected', response.data)
         selectedProject.value = response.data;
+        toast.add({
+          title: 'Selected a Project',
+          description: `Current Project: ${selectedProject.value?.project_name}`,
+          color: 'success'
+        })
       })
 }
 
@@ -48,6 +54,11 @@ function archiveProject(id: UnwrapRef<Project["id"]> | undefined) {
         if (selectedProject.value?.id === id) {
           selectedProject.value = undefined
           emit('projectSelected', undefined)
+          toast.add({
+            title: 'Project has been archived',
+            description: `Successfully Archived Project`,
+            color: 'success'
+          })
         }
       })
 }

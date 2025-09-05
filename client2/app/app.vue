@@ -1,4 +1,5 @@
 <template>
+  <UToaster/>
   <div class="flex justify-center space-x-12 bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg p-2 m-2">
     <NuxtLink to="home" class="hover:underline hover:text-blue-950">🏠︎ Home</NuxtLink>
     <NuxtLink to="about" class="hover:underline hover:text-blue-950">ℹ️ About</NuxtLink>

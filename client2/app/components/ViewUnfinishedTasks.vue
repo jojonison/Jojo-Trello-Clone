@@ -4,6 +4,7 @@ import type {Task} from '~/utils/types/models/task';
 import type {Project} from "~/utils/types/models/project";
 const {$api} = useNuxtApp();
 const unfinishedTasks = ref<Task[]>();
+const toast = useToast();
 const props = defineProps<{
   selectedProject?: Project
 }>()
@@ -26,12 +27,14 @@ const statusOptions = ref([
 
 function updateTaskStatus(task: Task) {
   $api.put(`/update-status/${task.id}`, {status: task.status}, {withCredentials: true})
+  toast.add({title: 'Updated', description: 'Task Updated Successfuly', color:'success'});
 }
 
 function markTaskAsDone(task: Task) {
   $api.patch(`/task-complete/${task.id}`)
       .then(() => {
         unfinishedTasks.value = unfinishedTasks.value?.filter(unfinishedTask => unfinishedTask.id !== task.id)
+        toast.add({title: 'Marked as Done', description: 'Task Marked as Done Successfully', color:'success'});
       })
 }
 
@@ -39,13 +42,14 @@ function removeTask(task: Task) {
   $api.delete(`/removeTask/${task.id}`)
       .then(() => {
         unfinishedTasks.value = unfinishedTasks.value?.filter(unfinishedTask => unfinishedTask.id !== task.id)
+        toast.add({title: 'Removed', description: 'Task Removed Successfully', color:'success'});
       })
 }
 </script>
 
 <template>
   <main class="bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg mx-5 my-2 w-full">
-    <div v-if="props.selectedProject === undefined">
+    <div v-if="props.selectedProject === undefined" class="font-bold flex justify-center text-4xl">
       Please select a project first
     </div>
     <AddTask :selected-project="props.selectedProject" @task-added="unfinishedTasks?.push($event)"/>

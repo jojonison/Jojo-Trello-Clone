@@ -10,12 +10,18 @@ const state = ref({
   title: '',
   description: ''
 })
+const toast = useToast();
 function addTask() {
+  if (!props.selectedProject) {
+    toast.add({title:'Please select a project', description: 'Cannot add task without a project', color:'error'});
+    return
+  }
   $api.post(`/create-task`, {
     title: state.value.title, description: state.value.description, project_id: props.selectedProject?.id
   })
       .then((response: AxiosResponse) => {
         emit('taskAdded', response.data)
+        toast.add({title:'Added a Task', description: `Successfully added ${response.data.title}`, color:'success'});
       })
 }
 </script>
