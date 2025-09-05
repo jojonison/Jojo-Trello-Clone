@@ -29,9 +29,15 @@ function addTask() {
 <template>
   <main class="flex justify-center max-w-full m-2">
     <UForm :state="state" @submit="addTask">
-      <UFormField label="Title" name="title"><UInput v-model="state.title" color="neutral" placeholder="Enter Title"/></UFormField>
-      <UFormField label="Description" name="description"><UInput v-model="state.description" color="neutral" placeholder="Enter Description"/></UFormField>
-      <UButton type="submit" color="neutral" class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300 m-2">✚ Add Task!</UButton>
+      <UFormField label="Title" name="title">
+        <UInput v-model="state.title" color="neutral" placeholder="Enter Title"/>
+      </UFormField>
+      <UFormField label="Description" name="description">
+        <UInput v-model="state.description" color="neutral" placeholder="Enter Description"/>
+      </UFormField>
+      <UButton type="submit" color="neutral" class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300 m-2">
+        ✚ Add Task!
+      </UButton>
     </UForm>
   </main>
 </template>

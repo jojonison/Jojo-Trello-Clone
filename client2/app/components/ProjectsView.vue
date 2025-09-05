@@ -34,11 +34,18 @@ const emit = defineEmits<{
 }>()
 const selectedProject = ref<Project | undefined>(undefined);
 const toast = useToast()
-function selectProject(id: UnwrapRef<Project["id"]> | undefined) {
-  $api.get(`/showProject/${id}`, {withCredentials: true})
+function selectProject(id: Project["id"] | undefined) {
+  $api.get(`/showProject/${id}`, { withCredentials: true })
       .then((response: AxiosResponse) => {
-        emit('projectSelected', response.data)
-        selectedProject.value = response.data;
+        // find the matching project in the list
+        const found = projects.value.find(project => project.id === id);
+        if (found) {
+          Object.assign(found, response.data); // merge fields into existing object
+          selectedProject.value = found;       // point directly to that object
+        } else {
+          selectedProject.value = response.data;
+        }
+        emit('projectSelected', selectedProject.value);
         toast.add({
           title: 'Selected a Project',
           description: `Current Project: ${selectedProject.value?.project_name}`,

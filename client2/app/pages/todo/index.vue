@@ -5,6 +5,7 @@ import ViewFinishedTasks from "~/components/ViewFinishedTasks.vue";
 import ViewArchivedProjects from "~/components/ViewArchivedProjects.vue";
 import type {Project} from "~/utils/types/models/project";
 const open = ref(false);
+const {$api} = useNuxtApp();
 interface CommandItem {
   id: string;
   label: string;
@@ -34,6 +35,18 @@ function handleKeydown(e: KeyboardEvent) {
 }
 onMounted(() => {window.addEventListener("keydown", handleKeydown);});
 onBeforeUnmount(() => {window.removeEventListener("keydown", handleKeydown);});
+const editingProjectName = ref(false);
+const originalProjectName = ref(selectedProject.value?.project_name);
+async function saveProjectName() {
+  if (selectedProject.value) {
+    await $api.put(`/updateProject/${selectedProject.value.id}`, {
+      project_name: selectedProject.value.project_name
+    });
+    originalProjectName.value = selectedProject.value.project_name;
+  }
+  editingProjectName.value = false;
+}
+
 </script>
 
 <template>
@@ -42,7 +55,22 @@ onBeforeUnmount(() => {window.removeEventListener("keydown", handleKeydown);});
         v-if="selectedProject"
         class="flex rounded-xl shadow-lg m-2 text-blue-400 font-extrabold text-2xl"
     >
-      Selected project: {{ selectedProject.project_name }}
+      <span class="mx-10"> Selected project: </span>
+      <span
+        v-if="!editingProjectName"
+        class="cursor-pointer hover:underline"
+        @click="editingProjectName = true"
+      >
+        {{ selectedProject.project_name }}
+      </span>
+      <UInput
+          v-else
+          v-model="selectedProject.project_name"
+          class="border rounded px-2"
+          autofocus
+          color="neutral"
+          @blur="saveProjectName"
+      />
     </div>
     <div class="flex flex-row justify-center">
       <div>
