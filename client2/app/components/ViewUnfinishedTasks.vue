@@ -19,9 +19,9 @@ function loadUnfinishedTasks() {
 }
 
 const statusOptions = ref([
-  {label: 'Not Started', value: 'not started'},
-  {label: 'In Progress', value: 'in progress'},
-  {label: 'On Hold', value: 'on hold'}
+  {label: '⏹️ Not Started', value: 'not started'},
+  {label: '▶️ In Progress', value: 'in progress'},
+  {label: '⏸️ On Hold', value: 'on hold'}
 ]);
 
 function updateTaskStatus(task: Task) {
@@ -64,14 +64,14 @@ function removeTask(task: Task) {
           class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
           @click="markTaskAsDone(task)"
       >
-        Mark as Done
+        ☑️ Mark as Done
       </UButton>
       <UButton
           color="neutral"
           class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
           @click="removeTask(task)"
       >
-        Remove Task
+        🚮 Remove Task
       </UButton>
     </div>
   </main>

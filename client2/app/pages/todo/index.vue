@@ -40,13 +40,14 @@ onBeforeUnmount(() => {window.removeEventListener("keydown", handleKeydown);});
   <main>
     <div
         v-if="selectedProject"
-        class="flex justify-center rounded-xl shadow-lg m-2 text-blue-400 font-extrabold text-4xl">
+        class="flex rounded-xl shadow-lg m-2 text-blue-400 font-extrabold text-2xl"
+    >
       Selected project: {{ selectedProject.project_name }}
     </div>
     <div class="flex flex-row justify-center">
       <div>
         <UButton
-            label="Open Command Palette"
+            label="Open Command Palette (Shift + p)"
             color="neutral"
             variant="subtle"
             icon="i-lucide-search"

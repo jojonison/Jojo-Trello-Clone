@@ -16,7 +16,7 @@
           class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
           @click="archiveProject(project.id)"
       >
-        Archive Project
+        📥 Archive Project
       </UButton>
     </div>
   </div>
