@@ -1,5 +1,6 @@
 <template>
   <div class="bg-blue-400 border-[6px] border-blue-950 rounded-xl shadow-lg m-2">
+    <AddProject @project-added="projects?.push($event)"/>
     <div
         v-for="project in projects" :key="project.id"
         class="bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">

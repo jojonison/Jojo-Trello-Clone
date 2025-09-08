@@ -50,7 +50,7 @@ function removeTask(task: Task) {
 <template>
   <main class="bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg mx-5 my-2 w-full">
     <div v-if="props.selectedProject === undefined" class="font-bold flex justify-center text-4xl">
-      Please select a project first
+      You must first select a project
     </div>
     <AddTask :selected-project="props.selectedProject" @task-added="unfinishedTasks?.push($event)"/>
     <div v-for="task in unfinishedTasks" :key="task.id" class="flex flex-col bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
