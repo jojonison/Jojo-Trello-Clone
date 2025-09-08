@@ -52,31 +52,33 @@ function removeTask(task: Task) {
     <div v-if="props.selectedProject === undefined" class="font-bold flex justify-center text-4xl">
       You must first select a project
     </div>
-    <AddTask :selected-project="props.selectedProject" @task-added="unfinishedTasks?.push($event)"/>
-    <div v-for="task in unfinishedTasks" :key="task.id" class="flex flex-col bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
-      <div><span class="font-bold">Title:</span> {{ task.title }}</div>
-      <div><span class="font-bold">Description:</span> {{ task.description }}</div>
-      <div><span class="font-bold">Status:</span> {{ task.status }}</div>
-      <USelect
-        v-model="task.status"
-        color="neutral"
-        :items="statusOptions"
-        @update:model-value="() => updateTaskStatus(task)"
-      />
-      <UButton
+    <div v-else>
+      <AddTask :selected-project="props.selectedProject" @task-added="unfinishedTasks?.push($event)"/>
+      <div v-for="task in unfinishedTasks" :key="task.id" class="flex flex-col bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
+        <div><span class="font-bold">Title:</span> {{ task.title }}</div>
+        <div><span class="font-bold">Description:</span> {{ task.description }}</div>
+        <div><span class="font-bold">Status:</span> {{ task.status }}</div>
+        <USelect
+          v-model="task.status"
           color="neutral"
-          class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
-          @click="markTaskAsDone(task)"
-      >
-        ☑️ Mark as Done
-      </UButton>
-      <UButton
-          color="neutral"
-          class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
-          @click="removeTask(task)"
-      >
-        🚮 Remove Task
-      </UButton>
+          :items="statusOptions"
+          @update:model-value="() => updateTaskStatus(task)"
+        />
+        <UButton
+            color="neutral"
+            class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
+            @click="markTaskAsDone(task)"
+        >
+          ☑️ Mark as Done
+        </UButton>
+        <UButton
+            color="neutral"
+            class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
+            @click="removeTask(task)"
+        >
+          🚮 Remove Task
+        </UButton>
+      </div>
     </div>
   </main>
 </template>
