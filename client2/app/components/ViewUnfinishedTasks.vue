@@ -27,7 +27,7 @@ const statusOptions = ref([
 
 function updateTaskStatus(task: Task) {
   $api.put(`/update-status/${task.id}`, {status: task.status}, {withCredentials: true})
-  toast.add({title: 'Updated', description: 'Task Updated Successfuly', color:'success'});
+  toast.add({title: 'Updated', description: 'Task Updated Successfully', color:'success'});
 }
 
 function markTaskAsDone(task: Task) {

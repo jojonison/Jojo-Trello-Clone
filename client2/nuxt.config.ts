@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     },
     runtimeConfig: {
         public: {
-            apiBase: 'http://127.0.0.1:8000/api',
+            apiBase: process.env.NUXT_PUBLIC_API_BASE,
         },
     },
     components: [{ path: '~/components' }],
@@ -26,7 +26,7 @@ export default defineNuxtConfig({
     css: ['~/assets/css/tailwind.css'],
 
     devServer: {
-        host: '127.0.0.1',
+        host: process.env.NUXT_HOST,
         port: 3000,
     }
 })
