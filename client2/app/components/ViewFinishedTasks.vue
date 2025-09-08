@@ -21,13 +21,16 @@ function loadFinishedTasks() {
 
 <template>
   <main class="bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg mx-5 my-2 w-full">
-    <div v-if="props.selectedProject === undefined">
+    <span class="font-bold flex justify-center text-4xl">Finished Tasks: </span>
+    <div v-if="props.selectedProject === undefined" class="font-bold flex justify-center text-4xl">
       You must first select a project
     </div>
-    <div v-for="task in finishedTasks" :key="task.id" class="flex flex-col bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
-      <div><span class="font-bold">Title:</span> {{ task.title }}</div>
-      <div><span class="font-bold">Description:</span> {{ task.description }}</div>
-      <div><span class="font-bold">Completed At:</span> {{task.completed_at }}</div>
+    <div v-else>
+      <div v-for="task in finishedTasks" :key="task.id" class="flex flex-col bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
+        <div><span class="font-bold">Title:</span> {{ task.title }}</div>
+        <div><span class="font-bold">Description:</span> {{ task.description }}</div>
+        <div><span class="font-bold">Completed At:</span> {{task.completed_at }}</div>
+      </div>
     </div>
   </main>
 </template>

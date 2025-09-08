@@ -49,6 +49,7 @@ function removeTask(task: Task) {
 
 <template>
   <main class="bg-blue-400 border-[6px] border-b-blue-950 rounded-xl shadow-lg mx-5 my-2 w-full">
+    <span class="font-bold flex justify-center text-4xl">Unfinished Tasks: </span>
     <div v-if="props.selectedProject === undefined" class="font-bold flex justify-center text-4xl">
       You must first select a project
     </div>
