@@ -22,7 +22,7 @@ function clickedButton() {
         class="bg-blue-200 border-[6px] border-b-blue-950 rounded-xl shadow-lg m-2 hover:bg-blue-800 hover:text-white"
         @click="clickedButton"
     >
-      ➡️ Get Started (If you do not get redirected to the app, please Log In first)
+      ➡️ Get Started
     </UButton>
   </main>
 </template>
