@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add remove task in ViewFinishedTasks.vue&#10;update README.md for api and client2">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="revert idk">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client2/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/pages/about/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/pages/about/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/app/pages/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/pages/home/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +22,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="tsconfig.json" />
-        <option value="JavaScript File" />
         <option value="TypeScript File" />
         <option value="Vue Composition API Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -277,7 +278,7 @@
       <workItem from="1757030043740" duration="7415000" />
       <workItem from="1757037546197" duration="6155000" />
       <workItem from="1757295320364" duration="5746000" />
-      <workItem from="1757377041684" duration="6900000" />
+      <workItem from="1757377041684" duration="10663000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -511,7 +512,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757383003438</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="idk">
+      <option name="closed" value="true" />
+      <created>1757384216833</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1757384216833</updated>
+    </task>
+    <task id="LOCAL-00031" summary="revert idk">
+      <option name="closed" value="true" />
+      <created>1757384349440</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1757384349440</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -529,8 +546,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="project_name no longer unique" />
-    <MESSAGE value="zod and toast" />
     <MESSAGE value="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status" />
     <MESSAGE value="Start add sticker on edit/update task. Install spatie media library" />
     <MESSAGE value="add more spatie, to be continued" />
@@ -554,7 +569,9 @@
     <MESSAGE value="add env" />
     <MESSAGE value="add edit task, update persist storage to local storage" />
     <MESSAGE value="add remove task in ViewFinishedTasks.vue&#10;update README.md for api and client2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add remove task in ViewFinishedTasks.vue&#10;update README.md for api and client2" />
+    <MESSAGE value="idk" />
+    <MESSAGE value="revert idk" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert idk" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
