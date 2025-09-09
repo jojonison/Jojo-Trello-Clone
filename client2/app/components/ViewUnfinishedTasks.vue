@@ -4,6 +4,7 @@ import type {Task} from '~/utils/types/models/task';
 import type {Project} from "~/utils/types/models/project";
 const {$api} = useNuxtApp();
 const unfinishedTasks = ref<Task[]>();
+const editingTask = ref<Task | null>(null);
 const toast = useToast();
 const props = defineProps<{
   selectedProject?: Project
@@ -45,6 +46,27 @@ function removeTask(task: Task) {
         toast.add({title: 'Removed', description: 'Task Removed Successfully', color:'success'});
       })
 }
+
+function startEditing(task: Task) {
+  editingTask.value = task;
+}
+
+function cancelEditing() {
+  editingTask.value = null;
+}
+
+function finishEditing(updated: Task) {
+  $api.put(`/task-update/${updated.id}`, {
+    title: updated.title,
+    description: updated.description,
+  }).then(() => {
+    editingTask.value = null;
+    const idx = unfinishedTasks.value?.findIndex(t => t.id === updated.id);
+    if (idx !== undefined && idx !== -1 && unfinishedTasks.value) {
+      unfinishedTasks.value[idx] = { ...unfinishedTasks.value[idx], ...updated };
+    }
+  });
+}
 </script>
 
 <template>
@@ -56,9 +78,17 @@ function removeTask(task: Task) {
     <div v-else>
       <AddTask :selected-project="props.selectedProject" @task-added="unfinishedTasks?.push($event)"/>
       <div v-for="task in unfinishedTasks" :key="task.id" class="flex flex-col bg-blue-200 border-[2px] border-blue-950 p-2 text-blue-950">
+        <EditTask v-if="editingTask && editingTask.id === task.id" :task="task" @submit="finishEditing" @cancel="cancelEditing" />
         <div><span class="font-bold">Title:</span> {{ task.title }}</div>
         <div><span class="font-bold">Description:</span> {{ task.description }}</div>
         <div><span class="font-bold">Status:</span> {{ task.status }}</div>
+        <UButton
+            color="neutral"
+            class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
+            @click="startEditing(task)"
+        >
+          ✏️ Edit Task
+        </UButton>
         <USelect
           v-model="task.status"
           color="neutral"

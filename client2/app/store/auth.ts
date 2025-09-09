@@ -29,5 +29,5 @@ export const useAuthStore = defineStore('auth',  () => {
     }
     return {email, name, isLoggedIn, login, logout};
 }, {
-    persist: {storage: piniaPluginPersistedstate.cookies()},
+    persist: {storage: piniaPluginPersistedstate.localStorage()},
 });
