@@ -1,3 +1,5 @@
+# Note: shift + p opens command palette (even when trying to type capital P)
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.

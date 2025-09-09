@@ -4,9 +4,10 @@ import type {Task} from '~/utils/types/models/task';
 import type {Project} from '~/utils/types/models/project';
 const {$api} = useNuxtApp();
 const finishedTasks = ref<Task[]>();
+const toast = useToast();
 const props = defineProps<{
   selectedProject?: Project
-}>()
+}>();
 onMounted(() => {
   loadFinishedTasks();
 });
@@ -15,6 +16,14 @@ function loadFinishedTasks() {
   $api.get(`/finished-tasks`, {params: {project_id: props.selectedProject.id}})
       .then((response: AxiosResponse) => {
         finishedTasks.value = response.data;
+      })
+}
+
+function removeTask(task: Task) {
+  $api.delete(`/removeTask/${task.id}`)
+      .then(() => {
+        finishedTasks.value = finishedTasks.value?.filter(unfinishedTask => unfinishedTask.id !== task.id)
+        toast.add({title: 'Removed', description: 'Task Permanently Removed', color:'success'});
       })
 }
 </script>
@@ -30,6 +39,13 @@ function loadFinishedTasks() {
         <div><span class="font-bold">Title:</span> {{ task.title }}</div>
         <div><span class="font-bold">Description:</span> {{ task.description }}</div>
         <div><span class="font-bold">Completed At:</span> {{task.completed_at }}</div>
+        <UButton
+            color="neutral"
+            class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
+            @click="removeTask(task)"
+        >
+          👉🏻🗑️ Permanently Delete
+        </UButton>
       </div>
     </div>
   </main>

@@ -81,7 +81,15 @@ function finishEditing(updated: Task) {
         <EditTask v-if="editingTask && editingTask.id === task.id" :task="task" @submit="finishEditing" @cancel="cancelEditing" />
         <div><span class="font-bold">Title:</span> {{ task.title }}</div>
         <div><span class="font-bold">Description:</span> {{ task.description }}</div>
-        <div><span class="font-bold">Status:</span> {{ task.status }}</div>
+        <div>
+          <span class="font-bold">Status:</span>
+          <USelect
+            v-model="task.status"
+            color="neutral"
+            :items="statusOptions"
+            @update:model-value="() => updateTaskStatus(task)"
+          />
+        </div>
         <UButton
             color="neutral"
             class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
@@ -89,12 +97,6 @@ function finishEditing(updated: Task) {
         >
           ✏️ Edit Task
         </UButton>
-        <USelect
-          v-model="task.status"
-          color="neutral"
-          :items="statusOptions"
-          @update:model-value="() => updateTaskStatus(task)"
-        />
         <UButton
             color="neutral"
             class="border-[2px] border-blue-950 hover:bg-blue-400 bg-blue-300"
