@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     components: [{ path: '~/components' }],
     ssr: false,
     css: ['~/assets/css/tailwind.css'],
-
+    typescript: {typeCheck: true},
     devServer: {
         host: process.env.NUXT_HOST,
         port: 3000,

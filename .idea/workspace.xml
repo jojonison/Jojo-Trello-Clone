@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add edit task, update persist storage to local storage">
+    <list default="true" id="f06dbe70-eee4-460a-bfc2-46d2b7695ad3" name="Changes" comment="add remove task in ViewFinishedTasks.vue&#10;update README.md for api and client2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/api/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client2/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/components/ViewFinishedTasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ViewFinishedTasks.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client2/app/components/ViewUnfinishedTasks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client2/app/components/ViewUnfinishedTasks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client2/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client2/nuxt.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +277,7 @@
       <workItem from="1757030043740" duration="7415000" />
       <workItem from="1757037546197" duration="6155000" />
       <workItem from="1757295320364" duration="5746000" />
-      <workItem from="1757377041684" duration="5657000" />
+      <workItem from="1757377041684" duration="6900000" />
     </task>
     <task id="LOCAL-00001" summary="add toast for zod">
       <option name="closed" value="true" />
@@ -506,7 +503,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757380632580</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add remove task in ViewFinishedTasks.vue&#10;update README.md for api and client2">
+      <option name="closed" value="true" />
+      <created>1757383003438</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1757383003438</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -524,7 +529,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="drop unique constraint in tasks" />
     <MESSAGE value="project_name no longer unique" />
     <MESSAGE value="zod and toast" />
     <MESSAGE value="Create, Update, Complete, Update Status for task returns TaskResource::make. Adjust frontend logic to match return value. PHPStorm workspace.xml edit. Update CreateTaskRequest.php and createTask function in TaskController.php to have default status" />
@@ -549,7 +553,8 @@
     <MESSAGE value="edit" />
     <MESSAGE value="add env" />
     <MESSAGE value="add edit task, update persist storage to local storage" />
-    <option name="LAST_COMMIT_MESSAGE" value="add edit task, update persist storage to local storage" />
+    <MESSAGE value="add remove task in ViewFinishedTasks.vue&#10;update README.md for api and client2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add remove task in ViewFinishedTasks.vue&#10;update README.md for api and client2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
