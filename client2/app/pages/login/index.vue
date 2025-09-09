@@ -56,7 +56,7 @@ function authenticate() {
       <UButton
           type="submit"
           color="neutral"
-          class="w-full bg-blue-200 border-[6px] border-b-blue-950 rounded-xl shadow-lg m-2 hover:bg-blue-800 "
+          class="w-full bg-blue-200 border-[6px] border-b-blue-950 rounded-xl shadow-lg m-2 hover:bg-blue-800 hover:text-white"
           @click="authenticate"
       >
         ➡️ Log In
